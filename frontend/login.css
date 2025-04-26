@@ -1,0 +1,114 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #06070d, #0b06a0);
+}
+
+nav img{
+    height: 150px;
+    /* align-items: center; */
+    /* position:fixed; */
+    /* top: 20px; */
+    /* left: 20px; */
+    position:absolute;
+    top: 10px;
+    left: 10px;
+}
+
+/* Container */
+.container {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 350px;
+}
+
+/* Input Box */
+.input-box {
+    position: relative;
+    margin: 20px 0;
+}
+
+.input-box input {
+    width: 100%;
+    padding: 10px ;
+    border: 2px solid #0b06a0;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+    transition: 0.3s ease-in-out;
+}
+
+.input-box label {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #777;
+    font-size: 16px;
+    transition: 0.3s ease-in-out;
+}
+
+/* Floating Label Effect */
+.input-box input:focus + label,
+.input-box input:valid + label {
+    top: 7px;
+    left: 10px;
+    font-size: 12px;
+    color: #0b06a0;
+}
+
+/* Button */
+.btn {
+    width: 100%;
+    padding: 10px;
+    background: #221ea4;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #2b0206;
+}
+
+/* Message */
+.message {
+    margin-top: 15px;
+    font-size: 14px;
+    color: green;
+}
+
+/* or seprater */
+.or-seprater{
+    display: flex;
+    align-items: center; 
+    margin-top: 1rem;
+    margin-bottom: 1rem ;
+}
+
+.flex-grow{
+    flex-grow: 1; 
+}
+.mx-2 {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+.text-muted {
+    color: #6c757d; 
+}

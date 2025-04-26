@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CareerCraft</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Top Banner -->
+    <div class="top-banner">
+        <span>🚀 Looking to Enhance Career Services? Explore Our <a href="#">Resume & Interview Solutions</a></span>
+    </div>
+
+    <!-- Navigation -->
+    <header>
+        <nav class="navbar">
+            <div class="nav-brand">
+                <img src="Logo.jpg" alt="CareerCraft Logo" class="logo">
+                <span class="brand-name">CareerCraft</span>
+            </div>
+
+            <div class="nav-links">
+                <div class="dropdown">
+                    <button class="dropbtn">Products 
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="#">Resume Builder</a>
+                        <a href="#">Interview Prep</a>
+                        <a href="#">Career Coach AI</a>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <button class="dropbtn">Resources 
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="#">Blog</a>
+                        <a href="#">Guides</a>
+                        <a href="#">Templates</a>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <button class="dropbtn">Partnerships 
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="#">Enterprise</a>
+                        <a href="#">Universities</a>
+                        <a href="#">Career Centers</a>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <div class="nav-buttons">
+                <a href="/carrercraft/login.html">
+                    <button class="btn btn-login">Login</button>
+                </a>
+                <button class="btn btn-primary">Create Resume</button>
+            </div>
+
+            <button class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>Welcome to the most advanced 
+                    <span class="highlight">AI Powered</span> 
+                    Career Platform
+                </h1>
+                <p>Change the way you approach your next job search.<br>
+                   Move 1 step closer to your dream job!</p>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary">Try For Free</button>
+                    <button class="btn btn-outline">Practice Interview</button>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="carrercraft.png" alt="Resume Builder Interface">
+            </div>
+        </div>
+    </section>
+    <section class="resume-upload">
+        <h2>Upload Your Resume</h2>
+        <p>Let our AI analyze your resume and match you with the perfect job opportunities.</p>
+        <form id="resumeUploadForm" enctype="multipart/form-data">
+            <div class="file-input-wrapper">
+                <!-- Corrected the name attribute to 'resume' -->
+                <input type="file" id="resumeFile" name="resume" accept=".pdf,.docx" required>
+                <label for="resumeFile" class="file-input-label">
+                    <i class="fas fa-cloud-upload-alt"></i>
+                    <span>Choose a file</span>
+                </label>
+            </div>
+            <p class="file-info">Supported formats: PDF, DOCX (Max 10MB)</p>
+            <button type="submit" class="btn btn-primary">Upload Resume</button>
+        </form>
+    
+        <div id="uploadStatus" class="upload-status"></div>
+        
+        <!-- Matching Companies Section -->
+        <div id="matchedCompanies" class="matched-companies" style="display: none;">
+            <h3>Matching Job Opportunities</h3>
+            <div id="jobCards" class="job-cards-container"></div>
+        </div>
+    </section>    
+    
+ <!-- Image Slider Section -->
+    <section class="image-slider">
+        <div class="slider-container">
+            <img src="img01.jpg" alt="Career Image 01">
+            <img src="img2.jpg" alt="Career Image 2">
+            <img src="img3.jpg" alt="Career Image 3">
+            <img src="img4.jpg" alt="Career Image 4">
+            <img src="img5.jpg" alt="Career Image 5">
+            <img src="img6.jpg" alt="Career Image 6">
+            <img src="img7.jpg" alt="Career Image 7">
+            <img src="img8.jpg" alt="Career Image 8">
+            <img src="img9.jpg" alt="Career Image 9">
+            <img src="img10.jpg" alt="Career Image 10">
+           
+        </div>
+    </section>
+
+    <!-- New Content Section -->
+    <section class="new-content">
+       <h2>Research & Insights</h2>
+
+<div class="content-grid">
+    <div class="content-item" style="opacity: 0; transform: translateY(20px); transition: opacity 0.5s ease, transform 0.5s ease;">
+        <h3>Outdated Recruitment Practices</h3><br>
+        <p>Most platforms still rely on basic keyword matching, leading to inefficiencies and missed opportunities.</p>
+    </div>
+    <div class="content-item" style="opacity: 0; transform: translateY(20px); transition: opacity 0.5s ease, transform 0.5s ease;">
+        <h3> High Resume Rejection Rates</h3><br>
+        <p>75% of resumes are rejected by automated systems based solely on keyword matches, overlooking qualified candidates.</p>
+    </div>
+    <div class="content-item" style="opacity: 0; transform: translateY(20px); transition: opacity 0.5s ease, transform 0.5s ease;">
+        <h3>Lack of Personalized Solutions</h3><br>
+        <p>Job seekers lack tools for fine-tuning their resumes, while employers struggle with lengthy hiring cycles.</p>
+    </div>
+</div>
+
+        <h2>Revolutionizing Job Search and Recruitment</h2>
+        
+        <div class="content-grid">
+            <div class="content-item" style="opacity: 0; transform: translateY(20px); transition: opacity 0.5s ease, transform 0.5s ease;">
+                <h3>For Job Seekers</h3><br>
+                <p>Quickly find the best job fit, gaining an edge in a competitive market.</p>
+            </div>
+            <div class="content-item" style="opacity: 0; transform: translateY(20px); transition: opacity 0.5s ease, transform 0.5s ease;">
+                <h3>For Employers</h3><br>
+                <p>Streamline the hiring process by delivering highly relevant candidates, improving both time-to-hire and quality of hires.</p>
+            </div>
+            <div class="content-item" style="opacity: 0; transform: translateY(20px); transition: opacity 0.5s ease, transform 0.5s ease;">
+                <h3>Social & Economic Benefits</h3>
+                <ul>
+                    <li>Saves time and effort for both job seekers and recruiters.</li>
+                    <li>Boosts employment rates by matching individuals with the right opportunities.</li>
+                    <li>Enhances hiring efficiency, driving organizational growth and innovation.</li>
+                </ul>
+            </div>
+        </div>
+
+        <h2>Why This is a Game-Changer</h2>
+        
+        <div class="feature-grid">
+            <div class="feature-item" style="opacity: 0; transform: translateY(20px); transition: opacity 0.5s ease, transform 0.5s ease;">
+                <i class="fas fa-robot"></i>
+                <h3>AI-Powered Resume Matching</h3>
+                <p>Our advanced AI analyzes your skills and matches you to the right job opportunities, helping you stand out from the competition.</p>
+            </div>
+            <div class="feature-item" style="opacity: 0; transform: translateY(20px); transition: opacity 0.5s ease, transform 0.5s ease;">
+                <i class="fas fa-comments"></i>
+                <h3>Instant Resume Feedback</h3>
+                <p>Get real-time, actionable feedback on your resume, ensuring you're always putting your best foot forward.</p>
+            </div>
+            <div class="feature-item" style="opacity: 0; transform: translateY(20px); transition: opacity 0.5s ease, transform 0.5s ease;">
+                <i class="fas fa-search"></i>
+                <h3>Continuous Job Discovery</h3>
+                <p>Receive personalized job recommendations that evolve over time to align with your career goals.</p>
+            </div>
+            <div class="feature-item" style="opacity: 0; transform: translateY(20px); transition: opacity 0.5s ease, transform 0.5s ease;">
+                <i class="fas fa-puzzle-piece"></i>
+                <h3>Seamless Integration</h3>
+                <p>We combine resume optimization and job matching in one dynamic platform, creating a continuous feedback loop to enhance your job search experience.</p>
+            </div>
+        </div>
+    </section>
+</body>
+<footer>
+    <div class="footer-content">
+        <div class="footer-section">
+            <h3>CareerCraft</h3>
+            <p>Empowering careers with AI-driven solutions.</p>
+        </div>
+        <div class="footer-section">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#problem">The Problem</a></li>
+                <li><a href="#solution">Our Solution</a></li>
+                <li><a href="#features">Features</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>Contact Us</h3>
+            <p>Email: carrercraft325@gmail.com </p>
+            <p>Phone:+91 8827940063</p>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2025 CareerCraft. All rights reserved.</p>
+    </div>
+</footer>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
+
